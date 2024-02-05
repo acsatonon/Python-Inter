@@ -3,6 +3,8 @@ def calculadora():
         num1= float(input('Digite um número: '))
         num2= float(input('Digite outro número: '))
         operacao= input('tipo da operação(+,-,/,*): ')
+        # if operacao not in ['+','-','*','/']:
+        #     raise ValueError
    
         if operacao=='+':
                 resultado= num1 + num2
@@ -23,7 +25,5 @@ def calculadora():
     except ZeroDivisionError:
         print('Erro: Divisão por zero não é permitida!')
         
-    finally:
-        print('Tudo certo!')
-        
+
 calculadora()
