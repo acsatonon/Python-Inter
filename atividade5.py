@@ -25,3 +25,5 @@ def calculadora():
         
     finally:
         print('Tudo certo!')
+        
+calculadora()
